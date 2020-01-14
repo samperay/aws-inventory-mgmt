@@ -21,4 +21,5 @@ def getdata(request):
     return render(request, 'inventory/getdata.html', context)
 
 def search(request):
+    # matching = [ element for element in info if element['availability_zone'] == 'ap-south-1a' ]
     return render(request, 'inventory/search.html')
