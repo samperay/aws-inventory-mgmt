@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+## Cloud Management
 
-You can use the [editor on GitHub](https://github.com/samperay/aws-inventory-mgmt/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+# Summay
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This project would display the inventory of the AWS instances, if you are working on large environments. 
+we are using python django application to further build this project. 
 
-### Markdown
+# Requirements
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+automated scripts are being placed in central repository and would download an latest .csv file with complete details of inventory.
+This project shall take that inventory file as an input and shall be displaying in web framework so that anyone don't have to download their copies.
 
-```markdown
-Syntax highlighted code block
+Majors from .csv which we need to focus on
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/samperay/aws-inventory-mgmt/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+instance_id
+instance_type
+ami_id
+instance_status
+availability_zone
+public_ip
+private_ip
+instance_keypair
+dns_public
+dns_private
+```
