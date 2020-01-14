@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta>
+    <title>AWS inventory management getlist </title>
+  </head>
+  <body>
+    <h2> Amazon Inventory list </h2>
+    <table border="1">
+      <tr>
+        <th>Instance_ID</th>
+        <th>Instance_Type</th>
+        <th>AMI_ID</th>
+        <th>Instance_Status</th>
+        <th>Availability_Zone</th>
+        <th>Public_IP</th>
+        <th>Private_IP</th>
+        <th>Instance_Keypair</th>
+        <th>Public_DNS</th>
+        <th>Private_DNS</th>
+      </tr>
+
+      {% for item in info %}
+      <tr>
+      <td> {{ item.instance_id }} </td>
+      <td> {{ item.instance_type }}  </td>
+      <td> {{ item.ami_id }}  </td>
+      <td> {{ item.instance_status }}  </td>
+      <td> {{ item.availability_zone }}  </td>
+      <td> {{ item.public_ip }}  </td>
+      <td> {{ item.private_ip }}  </td>
+      <td> {{ item.instance_keypair }}  </td>
+      <td> {{ item.dns_public }}  </td>
+      <td> {{ item.dns_private }} </td>
+    </tr>
+      {% endfor %}
+    </br>
+    </table>
+  </body>
+</html>

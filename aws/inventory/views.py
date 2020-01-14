@@ -1,8 +1,21 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+import csv
+
+reader  = csv.DictReader(open('inventory.csv', 'r'))
+inventories = []
+for line in reader:
+    inventories.append(line)
+
+info = inventories 
+
 
 def home(request):
-    return HttpResponse('<h1> Welcome to Amazon Inventory Management Systems - Home Page </h1>')
+    return render(request, 'inventory/home.html')
 
-def about(request):
-    return HttpResponse('<h1> Welcome to Amazon Inventory Management Systems - About Page </h1>')
+def getdata(request):
+
+    context = {
+        'info': info
+        }
+    return render(request, 'inventory/getdata.html', context)
