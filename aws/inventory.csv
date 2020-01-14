@@ -1,0 +1,8 @@
+instance_id,instance_type,ami_id,instance_status,availability_zone,public_ip,private_ip,instance_keypair,dns_public,dns_private
+i-09fb5495c7eb00d39,t2.micro,ami-0cb0e70f44e1a4bb5,running,ap-south-1b,172.31.13.154,15.206.165.154,mykey,ec2-15-206-165-154.ap-south-1.compute.amazonaws.com,ip-172-31-13-154.ap-south-1.compute.internal
+i-09fb5495c7eb00d40,t2.micro,ami-0cb0e70f44e1a4bb6,running,ap-south-1b,172.31.13.155,15.206.165.155,myetstkey,ec2-15-206-165-155.ap-south-1.compute.amazonaws.com,ip-172-31-13-155.ap-south-1.compute.internal
+i-09fb5495c7eb00d41,t2.micro,ami-0cb0e70f44e1a4bb7,running,ap-south-1b,172.31.13.156,15.206.165.156,myetstkey,ec2-15-206-165-156.ap-south-1.compute.amazonaws.com,ip-172-31-13-156.ap-south-1.compute.internal
+i-09fb5495c7eb00d42,t2.micro,ami-0cb0e70f44e1a4bb8,running,ap-south-1b,172.31.13.157,15.206.165.157,mytestingkey,ec2-15-206-165-157.ap-south-1.compute.amazonaws.com,ip-172-31-13-157.ap-south-1.compute.internal
+i-09fb5495c7eb00d43,t2.micro,ami-0cb0e70f44e1a4bb9,running,ap-south-1b,172.31.13.158,15.206.165.158,testmykey,ec2-15-206-165-158.ap-south-1.compute.amazonaws.com,ip-172-31-13-158.ap-south-1.compute.internal
+i-09fb5495c7eb00d44,t2.micro,ami-0cb0e70f44e1a4bb10,running,ap-south-1b,172.31.13.159,15.206.165.159,mykeyofkey,ec2-15-206-165-159.ap-south-1.compute.amazonaws.com,ip-172-31-13-159.ap-south-1.compute.internal
+i-09fb5495c7eb00d45,t2.micro,ami-0cb0e70f44e1a4bb11,running,ap-south-1b,172.31.13.160,15.206.165.160,myetstkey,ec2-15-206-165-160.ap-south-1.compute.amazonaws.com,ip-172-31-13-160.ap-south-1.compute.internal
