@@ -7,7 +7,7 @@ inventories = []
 for line in reader:
     inventories.append(line)
 
-info = inventories 
+info = inventories
 
 
 def home(request):
@@ -19,3 +19,6 @@ def getdata(request):
         'info': info
         }
     return render(request, 'inventory/getdata.html', context)
+
+def search(request):
+    return render(request, 'inventory/search.html')
