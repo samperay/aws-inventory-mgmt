@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+import django.db
 import csv
 
 reader  = csv.DictReader(open('inventory.csv', 'r'))
@@ -21,5 +22,11 @@ def getdata(request):
     return render(request, 'inventory/getdata.html', context)
 
 def search(request):
-    # matching = [ element for element in info if element['availability_zone'] == 'ap-south-1a' ]
-    return render(request, 'inventory/search.html')
+    query = request.GET.get('q')
+    matching = [ element for element in info if element['availability_zone'] == query ]
+
+    context = {
+        'match': matching
+    }
+
+    return render(request, 'inventory/search.html', context)

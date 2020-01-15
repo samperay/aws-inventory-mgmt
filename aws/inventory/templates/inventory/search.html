@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <title>search</title>
   </head>
+    <form class="" method="GET" action='/search'>
+      {% csrf_token %}
+      <input type="text" name="q" value="{{ request.GET.q }}" placeholder="search">
+      <button class="btn btn-success type="submit"></button>
+    </form>
   <body>
     <h1>Amazon Inventory Search </h1>
   </body>
