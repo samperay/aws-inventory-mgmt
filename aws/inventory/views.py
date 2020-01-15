@@ -20,13 +20,3 @@ def getdata(request):
         'info': info
         }
     return render(request, 'inventory/getdata.html', context)
-
-def search(request):
-    query = request.GET.get('q')
-    matching = [ element for element in info if element['availability_zone'] == query ]
-
-    context = {
-        'match': matching
-    }
-
-    return render(request, 'inventory/search.html', context)
