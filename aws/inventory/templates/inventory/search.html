@@ -1,42 +1,37 @@
+<div>
+  <h3>{{ pet.name|capfirst }}</h3>
+  <p>{{ pet.species }}</p>
+  {% if pet.breed %}
+    <p>Breed: {{ pet.breed }}</p>
+  {% endif %}
+  {% if pet.sex %}
+    <p>Sex: {{ pet.sex }}</p>
+  {% endif %}
+  {% if pet.age %}
+    <p>Age: {{ pet.age }}</p>
+  {% endif %}
+  {% if pet.vaccinations.all %}
+    <p>Vaccinations for:</p>
+    <ul>
+      {% for vaccination in pet.vaccinations.all %}
+        <li>{{ vaccination.name }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  <p>Submitted by: {{ pet.submitter }}</p>
+  <p>Submission date: {{ pet.submission_date|date:"M d Y" }}</p>
+  <p>{{ pet.description }}</p>
+</div>
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta>
-    <title>AWS inventory management availability_zone search </title>
+    <title>Amazon inventory sear  <p>{{ pet.species }}</p>
+  {% if pet.breed %}ch </title>
   </head>
   <body>
-    <h2> Amazon Inventory list </h2>
-    <table border="1">
-      <tr>
-        <th>Instance_ID</th>
-        <th>Instance_Type</th>
-        <th>AMI_ID</th>
-        <th>Instance_Status</th>
-        <th>Availability_Zone</th>
-        <th>Public_IP</th>
-        <th>Private_IP</th>
-        <th>Instance_Keypair</th>
-        <th>Public_DNS</th>
-        <th>Private_DNS</th>
-      </tr>
-
-      {% if info %}
-          {% for item in info %}
-          <tr>
-          <td> {{ item.instance_id }} </td>
-          <td> {{ item.instance_type }}  </td>
-          <td> {{ item.ami_id }}  </td>
-          <td> {{ item.instance_status }}  </td>
-          <td> {{ item.availability_zone }}  </td>
-          <td> {{ item.public_ip }}  </td>
-          <td> {{ item.private_ip }}  </td>
-          <td> {{ item.instance_keypair }}  </td>
-          <td> {{ item.dns_public }}  </td>
-          <td> {{ item.dns_private }} </td>
-        </tr>
-          {% endfor %}
-      {% endif %}
-    <br></br>
-    </table>
+    <p>{{ info.availability_zone }}</p>
+    {% info.availability_zone %}
   </body>
 </html>

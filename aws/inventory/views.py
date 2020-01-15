@@ -16,6 +16,6 @@ def getdata(request):
 def search(request,availability_zone):
     try:
         info = Invs.objects.get(availability_zone=availability_zone)
-    except Invs.DoesNotExist:
+    except Pet.DoesNotExist:
         raise Http404('availability_zone not found')
-    return render(request, 'inventory/search.html', {'info': info})
+    return render(request, 'inventory/getdata.html', {'info': info})
