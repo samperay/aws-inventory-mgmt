@@ -24,3 +24,16 @@ instance_keypair
 dns_public
 dns_private
 ```
+
+CSV file was loaded using python script which copies data in dbsqlite, the csv file has to be in same location as *manage.py* as it would require djano management to load to DB
+
+```
+$ python manage.py load_csv
+Creating Inventory data
+Loading Inventory data for Inventory available for AWS
+$
+```
+If there are still errors while migrating, you can * rm -rf migrations/ and then try loading the data.
+
+
+
